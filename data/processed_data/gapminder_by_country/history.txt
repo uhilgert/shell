@@ -1,0 +1,500 @@
+   48  ls
+   49  git branch master 
+   50  git checkout master 
+   51  notepad index.md 
+   52  git status
+   53  git commit -m "include course links"
+   54  git status
+   55  git push
+   56  git checkout gh-pages 
+   57  cat index.md 
+   58  git checkout master 
+   59  git checkout gh-pages 
+   60  git checkout master index.md
+   61  git status
+   62  cat index.md 
+   63  git commit
+   64  git commit -m "nw"
+   65  git push
+   66  exit
+   67  pwd
+   68  ls
+   69  cd Desktop/
+   70  mkdir_SDC_Workshop_2170826
+   71  mkdir SDC_Workshop_2170826
+   72  cd SDC_Workshop_2170826/
+   73  ls
+   74  mkdir shell
+   75  cd shell/
+   76  mkdir data
+   77  mkdir anal
+   78  rm anal/
+   79  rm -r anal
+   80  mkdir analyses
+   81  mkdir scripts
+   82  ls
+   83  cd data
+   84  mkdir original_data
+   85  mkdir processed_data
+   86  ls
+   87  cd ~/Desktop/cd ~/Desktop/SDC_Workshop_2170826/
+   88  git init
+   89  cd ..
+   90  git clone https://github.com/hilibilly/sdc_20170826.git
+   91  exit
+   92  pwd
+   93  cd Desktop/
+   94  pwd
+   95  mkdir SDC_Workshop_20170826
+   96  cd SDC_Workshop_20170826/MKDIR shell
+   97  mkdir shell
+   98  ls
+   99  cd SDC_Workshop_20170826/ls
+  100  cd SDC_Workshop_20170826/
+  101  pwd
+  102  mkdir shell
+  103  cd shell
+  104  mkdir analyse
+  105  mv analyse/ analyses/
+  106  ls
+  107  mdir data
+  108  mkdir data
+  109  mkdir scripts
+  110  ls
+  111  cd data
+  112  mkdir original_data
+  113  mkdir processed_data
+  114  ls
+  115  cd ~/Desktop/SDC_Workshop_20170826/
+  116  cd ..
+  117  rm -r shell/
+  118  git clone https://github.com/hilibilly/sdc_20170826
+  119  ls
+  120  ls l-S
+  121  ls -lS
+  122  cd sdc_20170826/
+  123  ls
+  124  cd data_01/
+  125  ls
+  126  cd gapm
+  127  cd gapminder_by_country/
+  128  ls
+  129  cd ..../..
+  130  cd ../../..
+  131  pwd
+  132  git init SDC_Workshop_20170826/
+  133  cd sdc_20170826/
+  134  ls
+  135  cd data_01
+  136  ls
+  137  cp -i -r * ~/Desktop/SDC_Workshop_20170826/shell/data/original_data/
+  138  cd ~/Desktop/SDC_Workshop_20170826/shell/data/original_data/
+  139  ls
+  140  cd Afghanistan_Raw.xlsx 
+  141  cd gapminder_by_country/
+  142  ls -l
+  143  exit
+  144  cd Desktop/
+  145  git clone https://github.com/uhilgert/gapminderdata_20170826.git
+  146  cd gapminderdata_20170826/
+  147  ls
+  148  cd data_01/
+  149  pwd; ls -l
+  150  mv -i -r * ..
+  151  mv -i * ..
+  152  ls
+  153  cd ..
+  154  ls
+  155  rm -ir data_01/
+  156  ls
+  157  cd ..
+  158  cd -
+  159  git status
+  160  git add
+  161  git commit -a -m "fixed structure"
+  162  git status
+  163  git add -A && git commit -m "added new files"
+  164  git status
+  165  git log
+  166  jobs
+  167  git log
+  168  git config --global user.email "hilgert@email.arizona.edu"
+  169  git config --global user.name "uhilgert"
+  170  git config --list
+  171  git push
+  172  exit
+  173  cd Desktop/
+  174  rm -rf gapminderdata_20170826/
+  175  rm -rf Workshop_20170826/
+  176  rm -rf sdc_20170826/
+  177  ls -l
+  178  cd hello-world/
+  179  git branch
+  180  git checkout master
+  181  ls
+  182  git config list
+  183  git config --list
+  184  find . -name hilibilly
+  185  find / -name hilibilly
+  186  pwd
+  187  cd ..
+  188  pwd
+  189  cd ..
+  190  pwd
+  191  git clone http://github.com/uhilgert/gapminderdata_20170826
+  192  cd gapminderdata_20170826/
+  193  ls
+  194  cd gapminder_by_country/
+  195  ls
+  196  cp -i Afghanistan.cc.txt 
+  197  cp -i Afghanistan.cc.txt ..
+  198  ls
+  199  ls | less
+  200  cd .
+  201  cd ..
+  202  cd -
+  203  cd ..
+  204  ls
+  205  git status
+  206  git add -A
+  207  git status
+  208  git commit -m "made a change"
+  209  git tatus
+  210  git status
+  211  git push
+  212  cd ..
+  213  cd ..
+  214  cd -
+  215  cd -
+  216  cd --
+  217  cd -
+  218  ls
+  219  cd EOT_Admin/
+  220  ls
+  221  cd gapminderdata_20170826/
+  222  ls -l
+  223  cd Afghanistan.cc.txt 
+  224  rm -i Afghanistan.cc.txt .
+  225  rm -i ./Afghanistan.cc.txt
+  226  cd gapminder_by_country/
+  227  ls -l | less
+  228  exit
+  229  ls
+  230  cd gap
+  231  cd gapminderdata_20170826/p
+  232  cd gapminderdata_20170826
+  233  ls
+  234  cd ..
+  235  mkdir gapminder
+  236  ls
+  237  ls -lS
+  238  cd gap
+  239  cd gapminder/
+  240  pwd
+  241  git init
+  242  cd ..
+  243  mkdir gapminderdata
+  244  cd gapminderdata
+  245  ls
+  246  pwd
+  247  git init
+  248  cp -r ../gapminderdata_20170826/* ./
+  249  ls
+  250  cd gapminder_by_country/
+  251  cd ..
+  252  git remote add origin https://github.com/uhilgert/gapminderdata.git
+  253  git push -u origin master
+  254  git push -u origin master
+  255  git status
+  256  git add Afghanistan_Raw.xlsx 
+  257  gapminder_by_country/
+  258  git push -u origin masterls
+  259  git status
+  260  git add -A
+  261  git status
+  262  git commit -m "load new repo"
+  263  git status
+  264  git log
+  265  git push
+  266  git push -u origin master
+  267  exit
+  268  ls -l
+  269  ls -S
+  270  rm -rf gapminder/
+  271  rm -rf gapminderdata_20170826
+  272  ls -S
+  273  cd sh
+  274  cd sh
+  275  cd Desktop/
+  276  ls
+  277  rm Afghanistan_broken.cc.xlsx 
+  278  exit
+  279  ls -l
+  280  rm -rf gapminderdata/
+  281  cd ls
+  282  ls
+  283  rm -rf base_cyverse_tutorial_repo/
+  284  rm -rf cyverse_base_tutorial_repo/
+  285  ls
+  286  ls Recent/
+  287  cd Recent/
+  288  ls
+  289  cd AutomaticDestinations/
+  290  ls
+  291  cd ../CustomDestinations/
+  292  ls
+  293  cat 28c8b86deab549a1.customDestinations-ms
+  294  cd ../..
+  295  pwd
+  296  ls
+  297  cd wc
+  298  ls
+  299  cd ..
+  300  eit
+  301  exit
+  302  pwd
+  303  nano test.txt
+  304  pwd
+  305  cd ..
+  306  exit
+  307  pwd
+  308  nano tets.txt
+  309  ls -lS
+  310  cd Desktop
+  311  ls -lS
+  312  ls -lS
+  313  ls -lS
+  314  cd ..
+  315  pwd
+  316  exit
+  317  pwd
+  318  ls
+  319  ls -l
+  320  ls -S
+  321  ls -l -S
+  322  ls -l -S
+  323  ls -lS
+  324  ls --help
+  325  ls --help | less
+  326  pwd --help
+  327  pwd
+  328  ls
+  329  cd Desktop/
+  330  pwd
+  331  ls
+  332  cd hello-world
+  333  pwd
+  334  ls
+  335  cd ~
+  336  pwd
+  337  clear
+  338  clear
+  339  clear
+  340  clear
+  341  clear
+  342  clear
+  343  clear
+  344  clear
+  345  clear
+  346  clear
+  347  clear
+  348  clear
+  349  pwd
+  350  cd Desktop
+  351  cd hello-world
+  352  pwd
+  353  cd ..
+  354  cd ..
+  355  pwd
+  356  cd Desktop
+  357  ls
+  358  ls -l
+  359  ls -lA
+  360  ls
+  361  pwd hello-world/
+  362  cd hello-world
+  363  pwd
+  364  ls -l
+  365  cd ~
+  366  mkdir SDC_workshop_20170826
+  367  pwd
+  368  ls
+  369  cd SDC_workshop_20170826/
+  370  cd ..
+  371  cd SDC_workshop_20170826/
+  372  cd ..
+  373  cd SDC_workshop_20170826/
+  374  pwd
+  375  ls
+  376  mkdir test
+  377  ls
+  378  cd test
+  379  pw
+  380  pwd
+  381  ls
+  382  nano greeting.txt
+  383  ls
+  384  cat greeting.txt 
+  385  nano greeting.txt
+  386  cat greeting.txt 
+  387  s
+  388  ls
+  389  pwd
+  390  cp -i greeting.txt ~/Desktop/
+  391  cd ..
+  392  cd ..
+  393  pwd
+  394  ls
+  395  cd desktop
+  396  ls -l
+  397  cat greeting.txt 
+  398  pwd
+  399  cd ../SDC_workshop_20170826/
+  400  pwd
+  401  ls
+  402  rm -i test/
+  403  cd test
+  404  rm -i greeting.txt
+  405  cd ..
+  406  pwd
+  407  ls
+  408  rm -i -r test/
+  409  ls
+  410  rm -i -r test/
+  411  ls
+  412  mkdir test
+  413  cd ../..
+  414  pwd
+  415  cd EOT_Admin/
+  416  cd SDC_workshop_20170826/
+  417  ls
+  418  cd ../..
+  419  ls
+  420  rm EOT_Admin/SDC_workshop_20170826/test/
+  421  cd EOT_Admin/
+  422  cd SDC_workshop_20170826/
+  423  cd test
+  424  nano greeting.txt
+  425  cd ..
+  426  cd ..
+  427  ls
+  428  cd SDC_workshop_20170826/
+  429  pwd
+  430  ls
+  431  cd ..
+  432  pwd
+  433  cd SDC_workshop_20170826/
+  434  rm test/greeting.txt 
+  435  cd test
+  436  ls
+  437  pwd
+  438  mkdir shell
+  439  ls
+  440  cd shell
+  441  ls
+  442  mkdir data
+  443  ls
+  444  mkdir analyses
+  445  ls
+  446  mkdir script
+  447  ls
+  448  cd data
+  449  pwd
+  450  mkdir original_data
+  451  ls
+  452  mkdir processed_data
+  453  ls
+  454  cd ~
+  455  pwd
+  456  cd SDC_workshop_20170826/
+  457  ls
+  458  cd test
+  459  ls
+  460  mv -r shell/ ..
+  461  mv shell/ ..
+  462  cd ..
+  463  ls
+  464  cd test
+  465  ls
+  466  cd ..
+  467  rm -r test
+  468  ls
+  469  ls */*
+  470  ls
+  471  pwd
+  472  ls */*
+  473  tree
+  474  pwd
+  475  ls
+  476  cd ~
+  477  cd desktop
+  478  pwd
+  479  git clone https://github.com/uhilgert/gapminderdata
+  480  ls
+  481  cd gapminderdata/
+  482  ls
+  483  cd gapminder_by_country/
+  484  ls
+  485  ls | wc -l
+  486  cd ~/SDC_workshop_20170826//shell/
+  487  pwd
+  488  ls
+  489  git init
+  490  cd ~/Desktop/gapminderdata/
+  491  ls
+  492  cp -i -r * ~/SDC_workshop_20170826/shell/data/original_data/
+  493  cd ~/SDC_workshop_20170826/shell/data/original_data/
+  494  ls
+  495  ls
+  496  cd gapminder_by_country/
+  497  ls
+  498  ls | wc -l
+  499  cd ..
+  500  ls
+  501  cp -i Afghanistan_Raw.xlsx ../processed_data/
+  502  cd ../processed_data/
+  503  pwd
+  504  ls
+  505  ls
+  506  cat Afghanistan_Raw.xlsx 
+  507  cat Afghanistan_Raw.txt 
+  508  cat Afghanistan_Raw.csv 
+  509  nano Afghanistan_Raw.csv
+  510  ls -l
+  511  ls -l
+  512  cd ../..
+  513  pwd
+  514  git status
+  515  git add -A
+  516  git status
+  517  git status
+  518  git commit -m "changed files in shell"
+  519  git status
+  520  git remote add origin https://github.com/uhilgert/shell.git
+  521  git push -u origin master
+  522  cd ..
+  523  pwd
+  524  cd shell/data/original_data/
+  525  ls
+  526  cp -ir gapminder_by_country/ ../processed_data/
+  527  cd ../processed_data/
+  528  ls
+  529  cd gapminder_by_country/
+  530  ls
+  531  ls | wc -l
+  532  ls | wc -l
+  533  cat Afghanistan.cc.txt 
+  534  ls -lS
+  535  cat country.cc.txt 
+  536  cat *.cc.txt
+  537  cat *.cc.txt > gapminder_firsttry.txt
+  538  cat gapminder_firsttry.txt 
+  539  less gapminder_firsttry.txt 
+  540  less gapminder_firsttry.txt 
+  541  mv country.cc.txt country.txt
+  542  cat country.txt 
+  543  cat country.txt *.cc.txt > gapminder_secondtry.txt
+  544  less gapminder_secondtry.txt 
+  545  mv gapminder_secondtry.txt gapminder.txt
+  546  history
+  547  history > history.txt

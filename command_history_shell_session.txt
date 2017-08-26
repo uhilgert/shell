@@ -1,0 +1,219 @@
+
+  317  pwd                            #print path to current working directory onto screen
+  318  ls                             #list directory content
+  319  ls -l
+  320  ls -S                          #list directory content; Sort by size
+  321  ls -l -S
+  322  ls -l -S
+  323  ls -lS
+  324  ls --help                      #show help page for ls command on screen
+  325  ls --help | less               #show as much of the help page for ls command as fits on the screen; press enter to advance to next row; press 'q' to terminate
+  326  pwd --help
+  327  pwd
+  328  ls
+  329  cd Desktop/
+  330  pwd
+  331  ls
+  332  cd hello-world                 #change folder to sub-folder 'hello-world'
+  333  pwd
+  334  ls
+  335  cd ~                           #change folder to HOME directory
+  336  pwd
+  337  clear                          #clears screen
+  338  clear
+  339  clear
+  340  clear
+  341  clear
+  342  clear
+  343  clear
+  344  clear
+  345  clear
+  346  clear
+  347  clear
+  348  clear
+  349  pwd
+  350  cd Desktop                     #change folder to sub-folder 'Desktop'
+  351  cd hello-world
+  352  pwd
+  353  cd ..
+  354  cd ..                          #move one directory p in directory structure
+  355  pwd
+  356  cd Desktop
+  357  ls
+  358  ls -l
+  359  ls -lA
+  360  ls
+  361  pwd hello-world/               #show content of folder 'hello world' from overarching folder
+  362  cd hello-world
+  363  pwd
+  364  ls -l
+  365  cd ~
+  366  mkdir SDC_workshop_20170826    #create (make) new subfolder 'SDC_workshop_20170826'
+  367  pwd
+  368  ls
+  369  cd SDC_workshop_20170826/
+  370  cd ..
+  371  cd SDC_workshop_20170826/
+  372  cd ..
+  373  cd SDC_workshop_20170826/
+  374  pwd
+  375  ls
+  376  mkdir test
+  377  ls
+  378  cd test
+  380  pwd
+  381  ls
+  382  nano greeting.txt              #create and open the text file 'greeting.txt'
+  383  ls
+  384  cat greeting.txt               #print content of text file 'greeting.txt' onto screen
+  385  nano greeting.txt
+  386  cat greeting.txt 
+  388  ls
+  389  pwd
+  390  cp -i greeting.txt ~/Desktop/  #copy interactively text file 'greeting.txt' onto Desktop (works from anywhere in directory structure. Setting flag -i will alert you if 'greeting.txt' already exists in target directory and give you a chance to avoid accidentially overwriting existing files)
+  391  cd ..
+  392  cd ..
+  393  pwd
+  394  ls
+  395  cd desktop
+  396  ls -l
+  397  cat greeting.txt 
+  398  pwd
+  399  cd ../SDC_workshop_20170826/
+  400  pwd
+  401  ls
+  402  rm -i test/
+  403  cd test
+  404  rm -i greeting.txt             #remove interactively file 'greeting.txt'. Setting flag -i will ask you whether you really wish to delete 'greeting.txt' before it deletes it irrevocably.
+  405  cd ..
+  406  pwd
+  407  ls
+  408  rm -i -r test/                 #remove interactively folder 'test/'. Setting flag -i will ask you whether you really wish to delete each file in the 'test/' directory. Setting flag -r will repeat this process recursively for each file in 'test/' and, finally for the 'test/' directory as well. 'rm' only allows to remove directories if flag '-r' is used.
+  409  ls
+  410  rm -i -r test/
+  411  ls
+  412  mkdir test
+  413  cd ../..
+  414  pwd
+  415  cd EOT_Admin/
+  416  cd SDC_workshop_20170826/
+  417  ls
+  418  cd ../..
+  419  ls
+  420  rm EOT_Admin/SDC_workshop_20170826/test/
+  421  cd EOT_Admin/
+  422  cd SDC_workshop_20170826/
+  423  cd test
+  424  nano greeting.txt
+  425  cd ..
+  426  cd ..
+  427  ls
+  428  cd SDC_workshop_20170826/
+  429  pwd
+  430  ls
+  431  cd ..
+  432  pwd
+  433  cd SDC_workshop_20170826/
+  434  rm test/greeting.txt 
+  435  cd test
+  436  ls
+  437  pwd
+  438  mkdir shell                    #create subfolder 'shell'
+  439  ls                             #list folder content to confirm that subfolder 'shell' was indeed created
+  440  cd shell                       #move into subfolder 'shell'
+  441  ls                             #check that subfolder 'shell' is empty
+  442  mkdir data                     #create subsubfolder 'data' (in subfolder 'shell')
+  443  ls                             #confirm that subfolder 'shell' was indeed created
+  444  mkdir analyses                 #create subsubfolder 'analyses' (in subfolder 'shell')
+  445  ls                             #confirm that subsubfolder 'analyses' was indeed created
+  446  mkdir scripts                  #create subsubfolder 'scripts' (in subfolder 'shell')
+  447  ls                             #confirm that subsubfolder 'scripts' was indeed created
+  448  cd data
+  449  pwd
+  450  mkdir original_data            #create subsubsubfolder 'original_data' in subsubfolder 'data'. This folder wil serve as 'archive' for any original data. No data will be processed in this folder to ensure the integrity of the original data and be able to return to even decades later.
+  451  ls                             #confirm that subsubsubfolder 'original_data' was indeed created
+  452  mkdir processed_data           # this is the folder in which we will conduct any data processing data
+  453  ls
+  454  cd ~
+  455  pwd
+  456  cd SDC_workshop_20170826/
+  457  ls
+  458  cd test
+  459  ls                            #realized that my directory structure did not run 'SDC_workshop_2017/shell/data/original_data' but 'SDC_workshop_2017/test/shell/data/original_data' Therefore
+  460  mv -r shell/ ..               #moved directory 'shell' with all subdirectories (-r) one level (..) up
+  462  cd ..
+  463  ls
+  464  cd test
+  465  ls                            #confirmed that directory 'test' is empty now
+  466  cd ..
+  467  rm -r test                    #removed directory 'test/
+  469  ls */*                        #listed every 'shell' subdirectory at once
+  476  cd ~                          #going home.....
+  477  cd desktop
+  478  pwd
+  479  git clone https://github.com/uhilgert/gapminderdata  #clone github repo into 'HOME' account to harvest the two data files in this repo and enter them into HOME/SDC_workshop_20170826/shell/data/original_data
+  480  ls
+  481  cd gapminderdata/
+  482  ls
+  483  cd gapminder_by_country/
+  484  ls
+  485  ls | wc -l
+  486  cd ~/SDC_workshop_20170826/shell/
+  487  pwd
+  488  ls
+  489  git init                      #initiating tracking by git program of any changes in the directory shell and any of its subfolders
+  490  cd ~/Desktop/gapminderdata/
+  491  ls
+  492  cp -i -r * ~/SDC_workshop_20170826/shell/data/original_data/   #copy any content (*) recursively (-r; as one of the items is a folder that conatins 143 files) from gapminderdata into HOME/SDC_workshop_20170826/shell/data/original_data
+  493  cd ~/SDC_workshop_20170826/shell/data/original_data/           #moving into destination directory ~/SDC_workshop_20170826/shell/data/original_data to check whether all content arrived
+  494  ls
+  495  ls
+  496  cd gapminder_by_country/
+  497  ls
+  498  ls | wc -l                    #checking that indeed 143 files arrived
+  499  cd ..
+  500  ls
+  501  cp -i Afghanistan_Raw.xlsx ../processed_data/     #copying Afghanistan_Raw.xlsx file into ~/SDC_workshop_20170826/shell/data/processed_data to work on it
+  502  cd ../processed_data/
+  503  pwd
+  504  ls
+  506  cat Afghanistan_Raw.xlsx       #trying to look into the content of a folder in MS format will usually yield gobble-di-gook in the shell.
+                                      #in the GUI we then opened the file with EXCEL and found that we could save it in txt-format (columns separated by tabs) or csv-format (columns separated by commas)
+  507  cat Afghanistan_Raw.txt        #content of this file can be viewed nicely by cat
+  508  cat Afghanistan_Raw.csv        #content of this file can be viewed nicely by cat
+  509  nano Afghanistan_Raw.csv       #fixed problems in this file using editor 'nano'
+  510  ls -l
+  512  cd ../..
+  513  pwd
+  514  git status                     #checked whether git would report that any files were changed -> which there were
+  515  git add -A                     #asked git to add the changes to its launch list
+  516  git status
+  518  git commit -m "changed files in shell"  #asked git to commit the changes to its structure for good
+                                      #went to GitHub to generate a repo 'shell' that would be able receive the changes that were introduced to the data on the command line and tracked by our local git program
+  519  git status
+  520  git remote add origin https://github.com/uhilgert/shell.git   #establish connection between local git program and online GitHub
+  521  git push -u origin master                                     #pushed previously commited changes from local 'shell' directory (and repo) into GitHub 'shell' repo
+  522  cd ..
+  523  pwd
+  524  cd shell/data/original_data/
+  525  ls
+  526  cp -ir gapminder_by_country/ ../processed_data/      #copying 'gapminder_by_country/' folder into ~/SDC_workshop_20170826/shell/data/processed_data to work on the 143 files in i; specifically to generate one large file with the data of all 142 countries
+  527  cd ../processed_data/
+  528  ls
+  529  cd gapminder_by_country/
+  530  ls
+  531  ls | wc -l
+  532  ls | wc -l
+  533  cat Afghanistan.cc.txt 
+  534  ls -lS
+  535  cat country.cc.txt 
+  536  cat *.cc.txt
+  537  cat *.cc.txt > gapminder_firsttry.txt        #concatenated the 1705 data rows from the 143 files into one 'gapminder_firsttry.txt' file with 1705 rows
+  538  cat gapminder_firsttry.txt 
+  539  less gapminder_firsttry.txt                  #found out that header row from 'country.cc.txt' file did not appear as header row in 'gapminder_firsttry.txt' file but rather somewhere between the data for 'Cote d'Ivoire' and 'Croatia'
+  541  mv country.cc.txt country.txt                #for the content in the 'country.cc.txt file' (which contains the column headers) to not be captured anymore in the *.cc.txt argument (see row #537) we renamed it ('mv') into a file that did not contain '.cc' any longer but was only named 'country.txt'
+  543  cat country.txt *.cc.txt > gapminder_secondtry.txt   #lists first the content of the 'country.txt' file (the headers) followed by the content of all .cc.txt files (i.e. the gapminder country files in alphabetical order) and saves this all in 'gapminder_secondtry.txt' file
+  544  less gapminder_secondtry.txt                 #showed that header row indeed had moved from loation between 'Cote d'Ivoire' and 'Croatia' to the beginning of the file, followed by the remaining 1704 rows of data for the other 142 countries whose data are listed in 'gapminder_by_country' directory
+  545  mv gapminder_secondtry.txt gapminder.txt     #as 'gapminder_secondtry.txt' contained what we had set out to create we renamed (mv) the file to its final name 'gapminder.txt'
+  546  history                                      #show on screen all commands used in most of the morning session
+  547  history > history.txt                        #capture in 'history.txt' the commands used in most of the morning session to prepare this document

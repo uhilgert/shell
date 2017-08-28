@@ -1,0 +1,160 @@
+Overview of Shell Section
+
+
+1) Finding information about commands
+
+Commands:
+A) For most Mac and Unix/Linux computers: 'man COMMAND'
+B) For most Windows and Unix/Linux computers 'COMMAND: --help'
+C) Online:
+  i) https://swcarpentry.github.io/shell-novice/reference/
+ ii) http://man.he.net/
+iii) https://explainshell.com/
+
+
+2) Compare and navigate GUI and Shell to understand how they each help to get things done on your computer
+
+Commands:
+A) 'pwd'
+B) 'cd [PATH/DIRECTORYNAME] [..] [~] [-]'
+
+
+3) Examine content
+
+Commands:
+A) 'ls [-l -t, -S, -A, -r]'
+B) 'cat [PATH/]FILENAME'
+C) 'less [PATH/]FILENAME',
+D) 'head [-number] [PATH/]FILENAME'
+E) 'tail [-number]'
+F) '| COMMAND'
+G) '>'
+
+
+4) Creating directories and files
+
+Commands:
+A) 'mkdir [PATH/]DIRECTORYNAME'
+B) 'nano [PATH/FILENAME]'
+
+
+5) Working with files and directories
+
+Commands:
+A) 'cp -i -r [PATH/]SUBJECTNAME [PATH/]TARGETNAME'
+B) 'mv -i -r [PATH/]SUBJECTNAME [PATH/]TARGETNAME'
+C) 'rm -i -r [PATH/]SUBJECTNAME [PATH/]TARGETNAME'
+
+6) Setting up a directory structure for the Post-Coffee-Break Section
+HOME or ~/
+          SDC_workshop_20170826/
+                                shell/
+                                      analyses/
+                                      scripts/
+                                      data/
+                                           original_data/
+                                           processed_data
+
+
+COFFEE BREAK
+
+
+7) Accessing information in a GitHub repository
+
+
+8) Taking possession of a GitHub repository
+
+Commands:
+A) 'git clone URL' to be done from your command line in the folder into which you would like the cloned repo to be cloned into.
+B) 'import URL' to be used from your GitHubcom account to get the repo from someone else's account in a way that it now becomes your copy that is NOT any longer connected to the original repo.
+C) 'fork URL' to be used from your GitHub account to get the repo from someone else's account in a way that it still tracks if someone else makes changes to it. (I.e., your version of the repo maintains a connection to the original repo.)
+
+
+9) Copying (see BULLET 5) above) an Excel file and a directory with 143 .cc.txt files from the repo cloned from https://github.com/uhilgert/gapminderdata into the original data file shown in Bullet 6) above.
+
+
+10) Copying (see BULLET 5) above) the Excel file from the 'original_data' folder into the 'processed_data' folder.
+
+
+11) Examining and fixing file content ('cat') and file formats
+
+A) Excel file: requires MS Excel to open and work in it
+B) tab-delimited .txt file: can be opened on command line as well as in GUI but not easily in Excel
+C) .csv file: can be opened and worked with on command line as well as in Excel
+D) Making significant fixes to data files requires meaningful notes or comments to explain these changes. On the command line (e.g. in nano) it is wise to place these comments into quotation marks ("COMMENT").
+
+
+12) Updating git (local) repository with changes:
+
+Commands
+A) 'git status' = returns listing of files / directories that have been changed (that are "on sale")
+B) 'git add -A' = adds all changed items into "shopping cart" (alt.: git add FILENMANE or DIRECTORY NAME)
+C) 'git commit -m "COMMENT"' = places changed items into "shopping bag"
+
+
+13) Pushing changes into repo of your own in your own GitHub.com account
+
+A) Requires you to first generate a receiving repo into your GitHub.com account:
+
+i) Point a browser to GitHub.com and log into your GitHub.com account using your username and password
+ii) Click on '+'and select 'New Repository'
+iii) Name the repo 'shell' (the name of your repo on your laptop)
+iv) Click 'Create Repository'
+v) Highlight and copy the two lines that will "...push an existing repository from the command line"
+
+B) Push the changes from your laptop to the repo in your GitHub.com account
+
+i) Paste the two lines from 13) A) v) above onto the command line.
+ii) Press Enter
+iii) if you do this the first ime, you may have to process these two commands:
+a) 'git config --global user.name "GH_USERNAME"' (Use your GitHub.com username)
+b) 'git config --global user.email "NAME@HOST"' (Use the email you used to set up your GitHub.com account)
+iv) Enter you GitHub.com username and password if and when required.
+
+C) Go to your GitHub.com account to check whether your online repo now contains the same files and directories as are on your computer. CAVEAT: this process will not push directories to GitHub.com that have not undergone changes in the first place.
+
+D) Once you established a connection between your local gitub repo and a GitHub.com repo you will only have to use the 'git push' command to push committed changes to GitHub.com. In this case, replace everything in 13) A and B above with the command 'git push'
+
+
+14) Combine the .cc.txt files in original_data/gapminder_by_country into one file 'gapminder.txt' with the column headers in the first row.
+
+A) Identify the file that contains the column headers
+i) Use 'cat' to examine the content of several .cc.txt files and compare the numbers of rows and columns in each. How many rows are in each?
+ii) Examine the content of the directory using 'ls -lS' to identify the smallest file.
+iii) Use 'cat' to examine the content of the smallest file country.cc.txt and find that it contains only one row with the column headers.
+
+B) Determine the numbe r of files that contain data for specific countries
+i) Use 'ls | wc -l' to determine the number of all files in the directory
+ii) If one of the files contains the column headers how many contain data for individual countries?
+
+C) Change the file with the column headers so that it looks different from the files with country data.
+i) Use 'mv -i -r' to rename 'country.cc.txt' into 'headers.txt'
+
+D) Generate a file gapminder.txt with the column headers in the first row, followed by the rows with information for specific countries in alphabetical order. 
+i) Use 'cat headers.txt @.cc.txt > gapminder.txt' to generate the desired file
+
+E) Confirm that 'gapminder.txt' contains what you think it contains
+i) Use 'ls | wc -l gapminder.txt' to count the lines in the file - it should match the result of {1 + (142 x 12)}
+ii) Use 'less gapminder.txt' to see whether the information in the file is preceded by a row of headers for each of the columns in the file.
+
+
+15) Update your local git repo and push the changes into the 'shell' repo in your own GitHub.com account:
+
+Commands
+A) 'git status' = returns listing of files / directories that have been changed (that are "on sale")
+B) 'git add -A' = adds all changed items into "shopping cart" (alt.: git add FILENMANE or DIRECTORY NAME)
+C) 'git commit -m "COMMENT"' = places changed items into "shopping bag"
+D) 'git push' to push the changes into yourGitHub.com repo 'shell'
+E) Enter you GitHub.com username and password if and when required.
+G) Go to your GitHub.com account to check whether your online repo now contains the same files and directories as are on your computer, specifically the 'gapminder.txt' file.
+
+
+
+
+
+
+
+
+
+
+14)

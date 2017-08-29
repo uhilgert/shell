@@ -1,6 +1,9 @@
 Overview of Shell Section
 
 
+BEGINNING OF SHELL SECTION     BEGINNING OF SHELL SECTION     BEGINNING OF SHELL SECTION     BEGINNING OF SHELL SECTION     BEGINNING OF SHELL SECTION     
+
+
 1) Finding information about commands
 
 Commands:
@@ -35,7 +38,7 @@ G) '>'
 
 Commands:
 A) 'mkdir [PATH/]DIRECTORYNAME'
-B) 'nano [PATH/FILENAME]'
+B) 'nano [PATH/]FILENAME'
 
 
 5) Working with files and directories
@@ -45,7 +48,8 @@ A) 'cp -i -r [PATH/]SUBJECTNAME [PATH/]TARGETNAME'
 B) 'mv -i -r [PATH/]SUBJECTNAME [PATH/]TARGETNAME'
 C) 'rm -i -r [PATH/]SUBJECTNAME [PATH/]TARGETNAME'
 
-6) Setting up a directory structure for the Post-Coffee-Break Section
+
+6) Setting up a directory structure for the work on gapminder data after the coffee break
 HOME or ~/
           SDC_workshop_20170826/
                                 shell/
@@ -56,10 +60,18 @@ HOME or ~/
                                            processed_data
 
 
-COFFEE BREAK
+'*' = any character
+					
+					
+COFFEE BREAK    COFFEE BREAK    COFFEE BREAK    COFFEE BREAK    COFFEE BREAK    COFFEE BREAK    COFFEE BREAK    COFFEE BREAK    COFFEE BREAK    
 
 
 7) Accessing information in a GitHub repository
+Go to a GitHub.com.
+Search GitHub for a repository or someone's GitHub user name.
+Click on a repository and examine it.
+
+ALTERNATIVELY: open the URL for a repository someone gave to you and that you found somewhere.
 
 
 8) Taking possession of a GitHub repository
@@ -149,12 +161,4 @@ E) Enter you GitHub.com username and password if and when required.
 G) Go to your GitHub.com account to check whether your online repo now contains the same files and directories as are on your computer, specifically the 'gapminder.txt' file.
 
 
-
-
-
-
-
-
-
-
-14)
+END OF SHELL SECTION    END OF SHELL SECTION    END OF SHELL SECTION    END OF SHELL SECTION    END OF SHELL SECTION    END OF SHELL SECTION    END OF SHELL SECTION    
